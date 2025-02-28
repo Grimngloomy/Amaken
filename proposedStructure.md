@@ -2,18 +2,18 @@
 # Amaken Property Rental Application - Implementation Structure
 
 ## Phase 1: Core UI/UX Foundation (Weeks 1-2)
-### Design System & Components [ ]
-- [ ] Implement minimalist, Apple-inspired design system
-- [ ] Core components library with animations
-- [ ] Responsive layout with collapsible sidebar
-- [ ] Mobile-first approach
+### Design System & Components [In Progress]
+- [x] Implement minimalist, Apple-inspired design system
+- [x] Core components library with animations (using shadcn/ui)
+- [x] Responsive layout with collapsible sidebar
+- [x] Mobile-first approach
 - [ ] Custom animations and transitions
 
-### Initial Pages & Navigation [ ]
+### Initial Pages & Navigation [In Progress]
 1. Main Layout
-   - [ ] Collapsible sidebar (desktop)
+   - [x] Collapsible sidebar (desktop)
    - [ ] Bottom navigation (mobile)
-   - [ ] Smooth transitions between views
+   - [x] Smooth transitions between views
 
 2. Public Property Listings
    - [ ] Grid/List view toggle
