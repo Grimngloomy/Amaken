@@ -1,4 +1,3 @@
-
 # Amaken Property Rental Application - Implementation Structure
 
 ## Phase 1: Core UI/UX Foundation (Weeks 1-2)
@@ -18,7 +17,7 @@
 2. Public Property Listings
    - [x] Grid/List view
    - [x] Property cards with hover effects
-   - [ ] Basic filters
+   - [x] Basic filters
    - [ ] Placeholder masked contact info
 
 3. Authentication UI

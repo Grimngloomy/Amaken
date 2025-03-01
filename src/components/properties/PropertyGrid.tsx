@@ -1,5 +1,5 @@
-
 import { PropertyCard } from "./PropertyCard";
+import { Building2 } from "lucide-react";
 
 const mockProperties = [
   {
@@ -37,9 +37,19 @@ const mockProperties = [
 export function PropertyGrid() {
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {mockProperties.map((property) => (
-        <PropertyCard key={property.id} property={property} />
-      ))}
+      {mockProperties.length === 0 ? (
+        <div className="col-span-full flex items-center justify-center rounded-lg border border-white/10 bg-[#111] p-8 text-center">
+          <div className="space-y-2">
+            <Building2 className="mx-auto h-8 w-8 text-gray-400" />
+            <h3 className="text-lg font-semibold">No properties found</h3>
+            <p className="text-sm text-gray-400">Try adjusting your filters</p>
+          </div>
+        </div>
+      ) : (
+        mockProperties.map((property) => (
+          <PropertyCard key={property.id} property={property} />
+        ))
+      )}
     </div>
   );
 }
