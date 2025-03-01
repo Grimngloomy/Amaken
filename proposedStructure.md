@@ -16,8 +16,8 @@
    - [x] Smooth transitions between views
 
 2. Public Property Listings
-   - [ ] Grid/List view toggle
-   - [ ] Property cards with hover effects
+   - [x] Grid/List view
+   - [x] Property cards with hover effects
    - [ ] Basic filters
    - [ ] Placeholder masked contact info
 
