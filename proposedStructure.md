@@ -18,7 +18,7 @@
    - [x] Grid/List view
    - [x] Property cards with hover effects
    - [x] Basic filters
-   - [ ] Placeholder masked contact info
+   - [x] Placeholder masked contact info
 
 3. Authentication UI
    - [ ] Sign up/Login forms
