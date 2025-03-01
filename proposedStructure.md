@@ -28,7 +28,7 @@
 ## Phase 2: Authentication & Core Features (Weeks 3-4)
 ### Supabase Integration [ ]
 1. Database Schema
-   - [ ] Users table with roles "Tenant, Landlord, Agent"
+   - [ ] Users table with roles "Tenant" "Landlord" "Agent(for later use)"
    - [ ] Properties table
    - [ ] Bookings table
    - [ ] Messages table
