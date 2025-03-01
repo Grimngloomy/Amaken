@@ -22,13 +22,13 @@
 
 3. Authentication UI
    - [ ] Sign up/Login forms
-   - [ ] User role selection
+   - [ ] User role selection Tenant or Landlord
    - [ ] Social authentication options
 
 ## Phase 2: Authentication & Core Features (Weeks 3-4)
 ### Supabase Integration [ ]
 1. Database Schema
-   - [ ] Users table with roles
+   - [ ] Users table with roles "Tenant, Landlord, Agent"
    - [ ] Properties table
    - [ ] Bookings table
    - [ ] Messages table
@@ -40,7 +40,7 @@
    - [ ] Session management
    - [ ] Profile management
 
-### Property Management [ ]
+### Property Management [ ] 
 1. Property CRUD Operations
    - [ ] Create listing form
    - [ ] Edit listing capabilities
@@ -74,7 +74,7 @@
    - [ ] Google Calendar sync
    - [ ] Appointment reminders
 
-## Phase 4: Contract & Analytics (Weeks 7-8)
+## Phase 4: Contract & Analytics (Weeks 7-8) shown if logged in user is "Landlord" or "Agent"
 ### Contract Management [ ]
 1. Digital Contracts
    - [ ] Contract upload system
