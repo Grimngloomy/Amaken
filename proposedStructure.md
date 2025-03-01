@@ -12,7 +12,7 @@
 ### Initial Pages & Navigation [In Progress]
 1. Main Layout
    - [x] Collapsible sidebar (desktop)
-   - [ ] Bottom navigation (mobile)
+   - [x] Bottom navigation (mobile)
    - [x] Smooth transitions between views
 
 2. Public Property Listings
