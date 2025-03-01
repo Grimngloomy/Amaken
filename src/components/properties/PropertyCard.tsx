@@ -7,7 +7,7 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-import { Bed, Bath, Phone, SquareFootIcon } from "lucide-react";
+import { Bed, Bath, Phone, SquaremeterIcon } from "lucide-react";
 
 interface PropertyCardProps {
   property: {
@@ -54,7 +54,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
             <span>{property.baths} baths</span>
           </div>
           <div className="flex items-center gap-1">
-            <SquareFootIcon className="h-4 w-4" />
+            <SquaremeterIcon className="h-4 w-4" />
             <span>{property.sqft} sqft</span>
           </div>
         </div>
