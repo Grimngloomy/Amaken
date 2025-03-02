@@ -1,7 +1,10 @@
 
 import { MainLayout } from "@/components/layouts/MainLayout";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { useNavigate } from "react-router-dom";
+import { LogIn } from "lucide-react";
 
 const data = [
   { name: 'Jan', value: 12000 },
@@ -13,8 +16,21 @@ const data = [
 ];
 
 const Index = () => {
+  const navigate = useNavigate();
+
   return (
     <MainLayout>
+      <div className="flex justify-end mb-6">
+        <Button 
+          onClick={() => navigate('/auth')}
+          variant="outline"
+          className="text-white border-white/10 hover:bg-white/5"
+        >
+          <LogIn className="mr-2 h-4 w-4" />
+          Login / Sign up
+        </Button>
+      </div>
+
       <div className="grid gap-6">
         {/* Revenue Card */}
         <Card className="p-6 bg-[#111] border-white/10">
