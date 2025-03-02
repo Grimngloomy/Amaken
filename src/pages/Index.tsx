@@ -1,7 +1,8 @@
+
 import { MainLayout } from "@/components/layouts/MainLayout";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
+import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { useNavigate } from "react-router-dom";
 import { LogIn, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
@@ -23,19 +24,24 @@ const profitData = revenueData.map(month => ({
 
 const Index = () => {
   const navigate = useNavigate();
-  const { theme, setTheme } = useTheme();
+  const { setTheme, theme, systemTheme } = useTheme();
+
+  const toggleTheme = () => {
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+  };
 
   return (
     <MainLayout>
       <div className="flex justify-between items-center mb-6">
         <Button
-          variant="ghost"
+          variant="outline"
           size="icon"
-          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-          className="rounded-full"
+          onClick={toggleTheme}
+          className="rounded-full border-primary/10"
         >
-          <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           <span className="sr-only">Toggle theme</span>
         </Button>
         <Button 
